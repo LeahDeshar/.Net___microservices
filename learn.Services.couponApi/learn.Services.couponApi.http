@@ -1,0 +1,6 @@
+@learn.Services.couponApi_HostAddress = http://localhost:5290
+
+GET {{learn.Services.couponApi_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
