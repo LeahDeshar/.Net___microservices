@@ -11,7 +11,7 @@ using learn.Services.couponApi.Data;
 namespace learn.Services.couponApi.Migrations
 {
     [DbContext(typeof(AppDbContext))]
-    [Migration("20240229063333_AddCouponToDb")]
+    [Migration("20240301161152_AddCouponToDb")]
     partial class AddCouponToDb
     {
         /// <inheritdoc />
@@ -45,6 +45,22 @@ namespace learn.Services.couponApi.Migrations
                     b.HasKey("CouponId");
 
                     b.ToTable("Coupons");
+
+                    b.HasData(
+                        new
+                        {
+                            CouponId = 1,
+                            CouponCode = "CODE1",
+                            DiscountAmount = 10.0,
+                            MinAmount = 50
+                        },
+                        new
+                        {
+                            CouponId = 2,
+                            CouponCode = "CODE2",
+                            DiscountAmount = 20.0,
+                            MinAmount = 100
+                        });
                 });
 #pragma warning restore 612, 618
         }

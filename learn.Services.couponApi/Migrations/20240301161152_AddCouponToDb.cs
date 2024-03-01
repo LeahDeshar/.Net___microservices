@@ -2,6 +2,8 @@
 
 #nullable disable
 
+#pragma warning disable CA1814 // Prefer jagged arrays over multidimensional
+
 namespace learn.Services.couponApi.Migrations
 {
     /// <inheritdoc />
@@ -23,6 +25,15 @@ namespace learn.Services.couponApi.Migrations
                 constraints: table =>
                 {
                     table.PrimaryKey("PK_Coupons", x => x.CouponId);
+                });
+
+            migrationBuilder.InsertData(
+                table: "Coupons",
+                columns: new[] { "CouponId", "CouponCode", "DiscountAmount", "MinAmount" },
+                values: new object[,]
+                {
+                    { 1, "CODE1", 10.0, 50 },
+                    { 2, "CODE2", 20.0, 100 }
                 });
         }
 
