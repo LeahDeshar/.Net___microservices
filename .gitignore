@@ -1,2 +1,7 @@
 ./vscode
 ./github
+
+.vscode
+.github
+.vs 
+./vs
