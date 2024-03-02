@@ -11,7 +11,12 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Integration", "Integration"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Services", "Services", "{F8705C3E-F2F1-4989-84A8-87B0F654A982}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "learn.Services.couponApi", "learn.Services.couponApi\learn.Services.couponApi.csproj", "{60FC57E7-49DA-48FF-8442-A859D09BD289}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "learn.Services.couponApi", "learn.Services.couponApi\learn.Services.couponApi.csproj", "{60FC57E7-49DA-48FF-8442-A859D09BD289}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{F0951508-CAE8-4F1C-ABFF-447F778CD54E}"
+	ProjectSection(SolutionItems) = preProject
+		.gitignore = .gitignore
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
